@@ -1,0 +1,67 @@
+<html>
+
+<head>
+	<title>Road Clash</title>
+	<script type="text/javascript" src="GameScript.js"></script>
+	<link rel="stylesheet" href="GameStyle.css" />
+	<link rel="stylesheet" href="RemoteStyle.css" />
+</head>
+
+<body onload="page_load()" onkeydown="Page_KeyDown(event)" onkeyup="Page_KeyUp(event)">
+
+	<div id="content">
+
+
+		<div id="options_panel">
+			<div id="btn_game" class="button">Game</div>
+			<div id="btn_remote" class="button">Remote</div>
+		</div>
+
+		<div id="game_panel" class="hidden">
+
+			<center>
+
+				<div id="msg"></div>
+				<br /><br />
+
+
+
+				<div id="Road">
+
+					<div id="WL1" class="WhiteLine"></div>
+					<div id="WL2" class="WhiteLine"></div>
+					<div id="WL3" class="WhiteLine"></div>
+					<div id="WL4" class="WhiteLine"></div>
+					<div id="WL5" class="WhiteLine"></div>
+
+					<div id="Obs1" class="Obstacle"></div>
+					<div id="Obs2" class="Obstacle"></div>
+
+					<div class="Car" id="Car" onclick="">
+						<div class="Front">
+						</div>
+						<div class="Body">
+						</div>
+						<div class="Rear">
+						</div>
+					</div>
+
+
+					<div id="Board"></div>
+
+				</div>
+			</center>
+		</div>
+
+		<div id="remote_control" class="hidden">
+			<button class="nav" id="nav_left">&lt;&lt;</button>
+			<button class="nav" id="nav_right">&gt;&gt;</button>
+		</div>
+
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+		<script type="text/javascript" src="./RemoteScript.js"></script>
+</body>
+
+</html>

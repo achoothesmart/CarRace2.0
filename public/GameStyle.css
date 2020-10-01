@@ -1,0 +1,84 @@
+#msg{ color:red;}
+
+.obj{
+	width:10px;
+	height:10px;
+	background-color:rgba(255,0,0,1);
+	position:absolute;
+}
+
+.Car{
+	position:absolute;
+	z-index:10;
+}
+
+.Car>.Front{
+	width:30px;
+	height:7.5px;
+	background-color:rgba(255,255,0,1);
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.Car>.Rear{
+	width:30px;
+	height:9px;
+	background-color:rgba(255,255,0,1);
+}
+
+.Car>.Body{
+	width:30px;
+	height:30px;
+	background-color:rgba(0,255,255,1);
+}
+
+#Road{
+	width:300px;
+	height:515px;
+	background-color:black;
+	position:absolute;
+	z-index:0;
+	overflow:hidden;
+}
+
+.WhiteLine{
+	width:20px;
+	height:70px;
+	background-color:white;
+	position:absolute;
+	color:white;
+	z-index:10;
+}
+
+.Obstacle{
+	width:40px;
+	height:40px;
+	background-color:Brown;
+	position:absolute;
+	color:white;
+	z-index:12;
+}
+
+#Obs1{
+	Top: 100px;
+	Left: 20px;
+}
+
+#Obs2{
+	Top: 200px;
+	Right: 30px;
+}
+
+#Board{
+	Font-Size:50;
+	Top:200px;
+	Left:30px;
+	Position:absolute;
+	z-index:15;
+	left:0px;
+	width:300px;
+	text-align:center;
+	background-color:Teal;
+	Color:black;
+}
+

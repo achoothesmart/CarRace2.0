@@ -1,0 +1,15 @@
+{
+  "name": "car-race",
+  "version": "1.0.0",
+  "description": "car race 2.0 with web server & web sockets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Prasanna Ashok V (v.prasannaashok@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
